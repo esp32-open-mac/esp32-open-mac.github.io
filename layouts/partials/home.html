@@ -1,0 +1,32 @@
+<div class="container">
+<section class="container">
+    <div class="about">
+    <h1>Building an open-source Wi-Fi MAC layer for the ESP32</h1>
+    
+    <p>
+    The ESP32 is a low-cost microcontroller with Wi-Fi connectivity.
+    Currently, the Wi-Fi MAC layer of the ESP32 is closed-source.
+    This project aims to change that: by reverse engineering the hardware registers and software, we can build a networking stack that is open-source up to the hardware, instead of having to use the proprietary MAC layer.
+    </p>
+    <p>
+    This will improve security auditability, open up the possibility for features not supported in the proprietary implementation (for example, standards-compliant mesh networking), improve interoperability and make research into Wi-Fi networks with lots of nodes more affordable.
+    </p>
+    
+    </div>
+</section>
+
+<section class="container centered">
+    <div class="about">{{ partialCached "home/social.html" . }}</div>
+    
+</section>
+
+<section class="container list">
+{{ .Content }}
+<ul>
+    {{- range .Paginator.Pages -}}
+    {{- .Render "li" -}}
+    {{- end -}}
+</ul>
+
+</section>
+</div>
