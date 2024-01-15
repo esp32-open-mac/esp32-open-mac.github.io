@@ -96,6 +96,8 @@ When the door was closed, no packets were captured at all. So, as to still give 
 
 The weakest signal my wireless dongle could still receive was -81&nbsp;dBm. The strongest signal that arrived was -12&nbsp;dBm. Since the Faraday cage blocked all packets, the power of even the strongest signal would have to have been attenuated to below -81&nbsp;dBm for it to not be able to be received anymore. So, a lower bound of 69&nbsp;dB attenuation is established. I know that this might not be entirely correct (the wireless dongle might not be calibrated, the geometry of the Faraday cage could have increased signal strength when the door was open, etc.), but I think it gives a good enough indication.
 
+The Wi-Fi dongle I have, does not do 5GHz Wi-Fi. To still test that frequency, I placed my phone in the Faraday cage while it was connected to a 5GHz Wi-Fi access point, and was not able to ping it anymore after I closed the door; I was also unable to call it.
+
 # Bill of materials
 
 | Item                                                                                                                                                                                                                            | Price in EUR (1 EUR = 1.1&nbsp;USD) | Link, if necessary                                                                                                                          |
