@@ -3,7 +3,7 @@ title = "ESP32 open MAC"
 theme = "coder"
 languageCode = "en"
 defaultContentLanguage = "en"
-paginate = 6
+paginate = 20
 enableEmoji = true
 # Enable Disqus comments
 # disqusShortname = "yourdiscussshortname"
