@@ -1,7 +1,7 @@
 +++
 authors = ["Jasper Devreker"]
 title = "Entirely eliminating the FreeRTOS dependency"
-date = "2025-01-16"
+date = "2025-01-14"
 description = "Entirely eliminating the FreeRTOS dependency"
 +++
 
