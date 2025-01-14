@@ -1,3 +1,9 @@
+<style>
+p {
+    white-space: normal; 
+}
+</style>
+
 <div class="container">
 <section class="container">
 <div class="about">
@@ -11,8 +17,23 @@ This project aims to change that: by reverse engineering the hardware registers 
 <p>
 This will improve security auditability, open up the possibility for features not supported in the proprietary implementation (for example, standards-compliant mesh networking), improve interoperability and make research into Wi-Fi networks with lots of nodes more affordable.
 </p>
-
-If you want to help out with developing, feel free to join <a href="https://matrix.to/#/#esp32-open-mac:matrix.org">the Matrix room</a>
+<p>
+The source code is under <a href="https://github.com/esp32-open-mac/">the esp32-open-mac organisation on GitHub</a>.
+There are currently two implementations:
+<ul>
+    <li>
+        <a href="https://github.com/esp32-open-mac/esp32-open-mac">esp32-open-mac</a> (we know it's confusing that one reference implementation has the same name as the overarching project, but bear with us)
+        This is a reference implementation that demonstrates how the hardware works, written in C and Rust: the hardware abstraction and initialization is written in C; the MAC stack (parsing packets and deciding which packets to send when) is written in Rust.
+        This relies on two FreeRTOS tasks; one to handle the hardware, one to handle the MAC stack.
+    </li>
+    <li>
+        <a href="https://github.com/esp32-open-mac/FoA">Ferris-on-Air (FoA)</a>: this is a reference implementation in pure async Rust. It builds on Embassy and the patches in the esp-hal we submitted to add support for the Wi-Fi peripheral.
+    </li>
+</ul>
+</p>
+<p>
+If you want to help out with developing or want to contact us, feel free to join <a href="https://matrix.to/#/#esp32-open-mac:matrix.org">the Matrix room</a>
+</p>
 </div>
 </section>
 

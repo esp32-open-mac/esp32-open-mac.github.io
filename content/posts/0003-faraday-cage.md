@@ -140,4 +140,4 @@ You'll need to 3D print various items, those are detailed at https://github.com/
     3. Foam tape
 3. (Last!) Attach Faraday fabric, with thumbtacks. Don't use a staple gun, you would tear the fabric.
 
-If you have any questions, open a GitHub issue at https://github.com/esp32-open-mac/faraday_cage or send me an email via <a href="mailto:esp32-open-mac@devreker.be">esp32-open-mac@devreker.be</a>.
+If you have any questions, open a GitHub issue at https://github.com/esp32-open-mac/faraday_cage or send me an email via [esp32-open-mac@devreker.be](mailto:esp32-open-mac@devreker.be).
